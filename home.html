@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code for kids</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body  >
+    <div class="container">
+        <div class="flex-container">
+            <div class="box header">
+                <span class="progressclose" id="abort">
+                  x
+                </span>
+                <div class="slider">
+                  <div class="w3-green"></div>
+                  <div class="w3-greyline"></div>
+                </div>
+            </div>
+            <div class="box body">
+            <div class="rowlayout" id="Q1">
+                <div class="box1">
+                    <h2>Copy this HTML code</h2>
+                    <div class="questionbox"><span>
+                        <span class="dotted-border">&lt;p&gt;</span>
+                        Polar bears live in the north pole
+                        <span class="dotted-border">&lt;/p&gt;</span>
+                    </span>
+                    </div>
+                    <div class="dotted-box">
+                    </div>
+                    <div class="event">
+                        <button class="shadowbutton">&lt;p&gt;</button>
+                        <button class="shadowbutton">&lt;/p&gt;</button>
+                        <button class="shadowbutton">Polar bears live in the north pole</button>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div> </div>
+                    <span>Result:</span>
+                    <div class="answerbox" id="answerbox">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box footer" id="footer">
+            <div class="skipcheck">
+                <div class="first">
+                <div class="btn btn-skip float-left" onclick="loadq2()">Skip</div>
+                <div class="btn btn-check float-right" onclick="checkq1()">Check</div>
+                </div>
+                <div class="second">
+                    <div class="btn btn-check float-right" onclick="loadq2()">Continue</div>
+                        <div class="float-left answer" >
+                            <span><img src="./img/tick.png" ></span>
+                            <span class="texttop">You are correct<br/>
+                                <span class="textbottom"></span>Meaning End Paragraph
+                            </span>
+                        </div>
+                </div>
+				<div class="third">
+                    <div class="btn btn-check float-right" onclick="loadq2()">Continue</div>
+                        <div class="float-left answer" >
+                            <span><img src="./img/wrong.png" ></span>
+                            <span class="texttop">You are Wrong<br/>
+                                <span class="textbottom"></span>Meaning End Paragraph
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./jquery.min.js"></script>
+<script src="./custom.js"></script>
+<script>
+    //loaddata()
+</script>
+</body>
+</html>
