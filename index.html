@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code for kids</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="Q1">
+    <div class="container">
+        <div class="header">
+                <span class="progressclose" id="abort">
+                  x
+                </span>
+                <div class="slider">
+                  <div class="w3-green"></div>
+                  <div class="w3-greyline"></div>
+                </div>
+        </div>
+        
+        <div class="body">
+            <div class="rowlayout">
+                <h2>Build this HTML code</h2>
+                <div class="questionbox"><span>
+                        <span class="dotted-border tooltip expand" data-title="lorem ipsum">&lt;p&gt;</span>
+                        Polar bears live in the north pole
+                        <span class="dotted-border tooltip expand" data-title="lorem ipsum">&lt;/p&gt;</span>
+                    </span>
+                </div>
+            <div class="width100">
+                <div class="box1 fleft linksBox">
+                    
+                    <div class="dotted-box">
+                    </div>
+                    <div class="event">
+                        <button class="shadowbutton">&lt;p&gt;</button>
+                        <button class="shadowbutton">&lt;/p&gt;</button>
+                        <button class="shadowbutton">Polar bears live in the north pole</button>
+                    </div>
+                </div>
+                
+                <div class="box2 fright">
+                    <p>Result:</p>
+                    <div class="answerbox linksBox" id="answerbox">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer" id="footer">
+        <div class="skipcheck">
+            <div class="second">
+                <div class="btn btn-check float-right" onclick="loadq2()">Continue</div>
+                    <div class="float-left answer" >
+                        <span><img src="./img/tick.png" ></span>
+                        <span class="texttop">You are correct<br/>
+                            <span class="textbottom"></span>Meaning End Paragraph
+                        </span>
+                    </div>
+            </div>
+            <div class="third">
+                <div class="btn btn-check float-right" onclick="loadq2()">Continue</div>
+                    <div class="float-left answer" >
+                        <span><img src="./img/wrong.png" ></span>
+                        <span class="texttop">You are Wrong<br/>
+                            <span class="textbottom"></span>Meaning End Paragraph
+                        </span>
+                    </div>
+            </div>
+            <div class="first">
+                <div class="btn btn-skip float-left" onclick="loadq2()">Skip</div>
+                <div class="btn btn-check float-right" onclick="checkq1()">Check</div>
+                </div>
+        </div>
+    </div>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $.getScript('./js/dom4.js');
+    $.getScript('./js/custom.js');
+</script>
+  </body>
+</html>
